@@ -1,0 +1,8 @@
+MODEL COMPARISON (held-out test split)
+
+Linear Regression: MAE=5.522, RMSE=6.750, R2=0.867
+Random Forest Regressor: MAE=5.539, RMSE=7.207, R2=0.848
+
+Selected model by lowest RMSE: Linear Regression
+
+Dataset is synthetic/simulated and is for demonstration only.
