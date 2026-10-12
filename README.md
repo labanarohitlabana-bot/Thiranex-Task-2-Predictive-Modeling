@@ -1,59 +1,51 @@
-<<<<<<< HEAD
 # Thiranex Task 2 — Predictive Modeling Using Machine Learning
 
-## Project overview
-This project predicts a student's final score from study-related features. It demonstrates data preparation, missing-value handling, model training, model comparison, and visual evaluation.
+## Project Overview
+This project predicts a student's final score using study-related features. It demonstrates data preparation, missing-value handling, supervised model training, model comparison, and performance evaluation.
 
-**Dataset notice:** `data/student_performance_synthetic.csv` is a simulated practice dataset generated for this project. It is not real student data and must not be described as real-world evidence. If your mentor provides an official dataset, use that instead and update the report.
+**Dataset notice:** The included dataset is synthetic and generated for practice. It does not represent real student data. If an official dataset was provided by the mentor, use that dataset instead.
 
-## Features
-- `study_hours_per_day`
-- `attendance_percent`
-- `previous_score`
-- `assignments_completed_out_of_10`
-- `sleep_hours_per_night`
-- Target: `final_score`
+## Features Used
+- Study hours per day
+- Attendance percentage
+- Previous score
+- Assignments completed
+- Sleep hours per night
 
-## Models
-1. Linear Regression
-2. Random Forest Regressor
+**Target:** Final score
 
-## Setup (Windows laptop)
-1. Install Python 3.10 or later from https://www.python.org/downloads/ (during setup, tick **Add Python to PATH**).
-2. Extract this ZIP to a folder.
-3. Open the folder in VS Code.
-4. Open Terminal → New Terminal.
-5. Run:
-   ```bash
-   py -m venv .venv
-   .venv\Scripts\activate
-   py -m pip install -r requirements.txt
-   py train_model.py
-   ```
-   If `py` is not recognized, use `python` instead.
-6. Open the `outputs` folder to see metrics, predictions, and charts.
+## Machine Learning Algorithms
+- Linear Regression
+- Random Forest Regressor
 
-## Evaluation
-- MAE: average absolute prediction error; lower is better.
-- RMSE: penalizes larger errors; lower is better.
-- R²: proportion of variance explained; closer to 1 is generally better.
+## Model Evaluation
+The models are evaluated using:
+- **MAE:** Mean Absolute Error
+- **RMSE:** Root Mean Squared Error
+- **R²:** Coefficient of determination
 
-Because this is a regression project, regression metrics and actual-vs-predicted/residual plots are appropriate. Confusion matrices and ROC curves apply to classification problems, not score prediction.
+The project also generates actual-versus-predicted, residual, and feature-importance visualizations.
 
-## Files
-- `train_model.py`: full reproducible training/evaluation script
-- `data/student_performance_synthetic.csv`: practice dataset
-- `outputs/model_metrics.csv`: model comparison
-- `outputs/test_predictions.csv`: held-out test predictions
-- `outputs/*.png`: charts
-- `Thiranex_Task2_Report.docx`: report with results and charts
+## How to Run on Windows
+1. Install Python 3.10 or later.
+2. Open a terminal in this project folder.
+3. Install dependencies:
 
-## Before submitting
-- Check the portal's accepted file format and upload instructions.
-- Review the report and understand the workflow/results.
-- If the portal/mentor supplied a dataset or template, follow that over this sample project.
-- Do not claim this synthetic dataset represents actual students.
-=======
-# Thiranex-Task-2-Predictive-Modeling
-Predictive Modeling using Machine Learning with Linear Regression and Random Forest, model evaluation metrics, and performance visualizations.
->>>>>>> 0d4537bde01365f4dca76eafefeabdaf6b64e1d6
+   `py -m pip install -r requirements.txt`
+
+4. Run the model:
+
+   `py train_model.py`
+
+5. Check the `outputs` folder for metrics, predictions, and charts.
+
+## Project Files
+- `train_model.py` — training and evaluation script
+- `data/student_performance_synthetic.csv` — practice dataset
+- `outputs/model_metrics.csv` — model comparison metrics
+- `outputs/test_predictions.csv` — test-set predictions
+- `outputs/*.png` — evaluation charts
+- `Thiranex_Task2_Report.docx` — project report
+
+## Important
+This project is for supervised-learning practice. Results from the synthetic dataset should not be presented as evidence of real-world student performance.
