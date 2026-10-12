@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Thiranex Task 2 — Predictive Modeling Using Machine Learning
 
 ## Project overview
@@ -52,3 +53,7 @@ Because this is a regression project, regression metrics and actual-vs-predicted
 - Review the report and understand the workflow/results.
 - If the portal/mentor supplied a dataset or template, follow that over this sample project.
 - Do not claim this synthetic dataset represents actual students.
+=======
+# Thiranex-Task-2-Predictive-Modeling
+Predictive Modeling using Machine Learning with Linear Regression and Random Forest, model evaluation metrics, and performance visualizations.
+>>>>>>> 0d4537bde01365f4dca76eafefeabdaf6b64e1d6
